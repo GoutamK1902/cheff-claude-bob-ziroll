@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAFAF8;
+}
+
+/* #root {
+  text-align: center;
+} */
+
+
+/* HEADER START*/
+.header {
+  height: 80px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+  box-shadow: 0 1px 5px 0px #55555566;
+}
+
+.header-logo {
+  width: 43px;
+  height: 52px;
+}
+
+.header-text {
+  font-family: "Inter", serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -0.05em;
+}
+
+/* HEADER END*/
+
+/* Ingredient Form  Start*/
+.add-ingredient-form {
+  display: flex;
+  height: 38px;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 12px;
+}
+
+.add-ingredient-form>input {
+  flex-grow: 1;
+  max-width: 400px;
+  min-width: 200px;
+  padding: 9px 13px;
+  border-radius: 6px;
+  border: 1px solid #D1D5D8;
+  box-shadow: 0 1px 2px 0px, rgba(0, 0, 0, 0.05);
+}
+
+.add-ingredient-form>button {
+  font-family: "Inter", sans-serif;
+  border: none;
+  border-radius: 6px;
+  background-color: #141413;
+  color: #FAFAF8;
+  width: 150px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: box-shadow 300ms;
+  transition: background-color 300ms;
+  transition: color 300ms;
+}
+
+.add-ingredient-form>button::before {
+  content: "+";
+  margin-right: 5px;
+}
+
+.add-ingredient-form>button:hover {
+  cursor: pointer;
+  background-color: #FAFAF8;
+  color: #141413;
+  box-shadow: 1px 1px 3px 0 #575757;
+}
+
+/* Ingredient Form End*/
