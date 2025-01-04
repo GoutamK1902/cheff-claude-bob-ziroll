@@ -4,8 +4,8 @@ import Ingredients from "./Ingredients";
 
 export default function Form(props) {
   // const [ingredient, setIngredient] = useState("");
-  const addIngredient = (event) => {
-    event.preventDefault();
+  const addIngredient = (formData) => {
+    /*// event.preventDefault();
     /*
     USESTATE is USED HERE
     setIngredient("");
@@ -19,10 +19,13 @@ export default function Form(props) {
     */
     //  --------------------------
     /*FormDATA method */
-    const formData = new FormData(event.currentTarget);
-    const newIngredient = formData.get("ingredient");
+    // const formData = new FormData(event.currentTarget);
     // console.log(newIngredient);
+    // event.currentTarget.reset();
+    // ======================= */
 
+    // action does all the above logic
+    const newIngredient = formData.get("ingredient");
     newIngredient != ""
       ? props.updatedList((prevVal) => [
           ...prevVal,
@@ -30,12 +33,11 @@ export default function Form(props) {
             newIngredient.slice(1, newIngredient.length).toLowerCase(),
         ])
       : null;
-    event.currentTarget.reset();
   };
 
   return (
     <>
-      <form onSubmit={addIngredient} className="add-ingredient-form">
+      <form action={addIngredient} className="add-ingredient-form">
         <input
           name="ingredient"
           type="text"
