@@ -166,3 +166,27 @@ body {
 }
 
 /* get-recipe End */
+
+/* SUGGESTED RECIPE START  */
+
+.suggested-recipe-section {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.suggested-recipe-container {
+  color: #475467;
+  /* background-color: #D17557; */
+  line-height: 28px;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.suggested-recipe-container ul li,
+.suggested-recipe-container ol li {
+  margin-bottom: 8px;
+}
+
+/* SUGGESTED RECIPE  END */

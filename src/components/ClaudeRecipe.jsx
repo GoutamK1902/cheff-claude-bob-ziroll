@@ -3,7 +3,7 @@ import React from "react";
 export default function ClaudeRecipe() {
   return (
     <>
-      <section>
+      <section className="suggested-recipe-section">
         <h2>Chef Claude Recommends:</h2>
         <article className="suggested-recipe-container" aria-live="polite">
           <p>
